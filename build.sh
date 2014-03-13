@@ -16,7 +16,7 @@ fi
 
 usage() {
     echo "Usage: $0 {release|rebuild|clean|silent|verbose|single} [config-xxx]"
-    echo "  config file will be generated if build with TARGET_PRODUCT"
+    echo "  config file will be generated if build with TARGET_KERNEL_PRODUCT"
     exit 1
 }
 
@@ -53,7 +53,7 @@ while test -n "$1"; do
         makejobs=""
     ;;
     *)
-        export TARGET_PRODUCT=$1
+        export TARGET_KERNEL_PRODUCT=$1
     ;;
     esac
     shift
