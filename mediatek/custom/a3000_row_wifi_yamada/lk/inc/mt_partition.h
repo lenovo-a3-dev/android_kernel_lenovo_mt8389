@@ -1,0 +1,1 @@
+../../../mt8389_tablet_a3v2/lk/inc/mt_partition.h

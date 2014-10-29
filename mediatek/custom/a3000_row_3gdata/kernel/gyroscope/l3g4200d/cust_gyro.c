@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_a3v2/kernel/gyroscope/l3g4200d/cust_gyro.c

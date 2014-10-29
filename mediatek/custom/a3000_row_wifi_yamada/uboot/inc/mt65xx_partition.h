@@ -1,0 +1,1 @@
+../../../mt8389_tablet_a3v2/uboot/inc/mt65xx_partition.h

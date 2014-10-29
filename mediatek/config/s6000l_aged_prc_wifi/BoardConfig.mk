@@ -1,0 +1,1 @@
+../s6000_row_wifi/BoardConfig.mk

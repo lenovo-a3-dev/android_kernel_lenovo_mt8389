@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_s3v2/kernel/leds/mt65xx/cust_leds_def.h

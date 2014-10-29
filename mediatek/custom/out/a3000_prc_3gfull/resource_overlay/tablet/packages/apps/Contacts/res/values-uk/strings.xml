@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="generic_no_account_prompt">"Збережіть свої контакти на випадок втрати свого телефону: синхронізуйте їх з онлайновою службою."</string>
+</resources>

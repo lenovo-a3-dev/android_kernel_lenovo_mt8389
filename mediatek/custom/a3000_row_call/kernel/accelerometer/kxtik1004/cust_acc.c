@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_a3v2/kernel/accelerometer/kxtik1004/cust_acc.c

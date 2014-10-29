@@ -1,0 +1,1 @@
+../../mt8389_tablet_a3v2/preloader/mt_memory.c

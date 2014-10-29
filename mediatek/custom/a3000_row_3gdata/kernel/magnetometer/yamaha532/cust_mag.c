@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_a3v2/kernel/magnetometer/yamaha532/cust_mag.c

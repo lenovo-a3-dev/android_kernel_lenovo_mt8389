@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_a3v2/kernel/accelerometer/adxl345/cust_acc.c

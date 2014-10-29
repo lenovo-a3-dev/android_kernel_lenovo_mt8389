@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_s3v2/kernel/touchpanel/cy8ctma300/tpd_custom_cy8ctma300.h

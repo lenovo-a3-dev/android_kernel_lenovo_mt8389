@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_a3v2/kernel/imgsensor/hi542_raw/hi542raw_CameraCustomized.h

@@ -1,0 +1,1 @@
+/home/kupyxa4444/android/working/mediatek/build/shell.sh

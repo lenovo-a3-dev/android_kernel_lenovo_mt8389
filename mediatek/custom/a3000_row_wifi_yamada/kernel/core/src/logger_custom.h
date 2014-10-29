@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_a3v2/kernel/core/src/logger_custom.h

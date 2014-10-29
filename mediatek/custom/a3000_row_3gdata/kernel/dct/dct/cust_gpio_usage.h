@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_a3v2/kernel/dct/dct/cust_gpio_usage.h

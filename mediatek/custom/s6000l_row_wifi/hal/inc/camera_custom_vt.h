@@ -1,0 +1,1 @@
+../../../mt8389_tablet_s3v2/hal/inc/camera_custom_vt.h

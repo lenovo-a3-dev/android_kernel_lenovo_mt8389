@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_s3v2/kernel/touchpanel/GT818B-fpga/tpd_custom_GT818B.h

@@ -1,0 +1,6 @@
+//building time information
+<<<<<<< HEAD
+#define BUILD_TIME "Tue Jan 15 15:10:17 CST 2013"
+=======
+#define BUILD_TIME "Wed Jan 16 10:35:33 CST 2013"
+>>>>>>> remotes/tab/mtk_mt8389_jb42_trunk

@@ -1,0 +1,1 @@
+../../../../../mt8389_tablet_s3v2/security/chip_config/s/gfh/GFH_PADDING.txt

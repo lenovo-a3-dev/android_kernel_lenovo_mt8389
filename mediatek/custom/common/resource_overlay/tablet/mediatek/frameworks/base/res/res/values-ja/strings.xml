@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="aerr_process_lowmem">タブレットのストレージがいっぱいです。処理が 
+停止しました。空き容量を増やして再度試みてください。</string>
+    <string name="criticallowmessage">デバイスのストレージがいっぱいです。不要なファイルを削除しないとアプリケーションが予期せず終了することがあります。</string>
+    <string name="aerr_application_lowmem">タブレットのストレージがいっぱいです。アプリケーションが停止しました。空き容量を増やして再度試みてください。</string>
+    <string name="storage_withsd">タブレットのストレージに十分な容量がありません。空き容量を増やすか、デフォルトの書き込み先ディスクの設定を変更してください。</string>
+    <string name="storage_withoutsd">タブレットのストレージに十分な容量がありません。空き容量を増やすか、SD カードを挿入してください。</string>
+</resources>

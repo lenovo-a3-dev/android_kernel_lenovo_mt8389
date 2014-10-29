@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="generic_no_account_prompt">"携帯端末を紛失したときにも連絡先を保護するため、オンラインサービスと同期させます。"</string>
+</resources>

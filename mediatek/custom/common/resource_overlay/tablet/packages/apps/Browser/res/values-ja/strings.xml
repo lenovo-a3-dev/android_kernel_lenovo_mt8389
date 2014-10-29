@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="webstorage_origin_summary_mb_stored">"携帯電話に保存している容量（MB）"</string>
+</resources>

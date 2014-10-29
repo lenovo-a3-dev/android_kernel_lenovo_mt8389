@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_sip_account_found">W tym urządzeniu nie ma kont do rozmów internetowych.  Dodać jedno teraz?</string>
+    <string name="ota_progress">Czekaj, aż programowanie urządzenia zostanie zakończone.</string>
+    <string name="ota_skip_activation_dialog_message">Jeśli pominiesz aktywację, nie będzie można nawiązać połączenia ani łączyć się z sieciami danych komórkowych (choć można będzie podłączyć się do sieci Wi-Fi). Do momentu aktywacji urządzenia, przy każdym uruchomieniu pojawiać się będzie pytanie o jego aktywację.</string>
+    <string name="ota_successful">Urządzenie jest teraz aktywowane.  Uruchomienie usługi może zająć do 15 minut.</string>
+    <string name="ota_title_activate">Aktywuj urządzenie</string>
+    <string name="ota_title_activate_success">Urządzenie zostało aktywowane!</string>
+    <string name="ota_touch_activate">Do aktywowania usługi urządzenia wymagane jest nawiązanie specjalnego połączenia. \n\nPo naciśnięciu \u201CAktywuj\u201D wysłuchaj instrukcji aktywacji urządzenia.</string>
+    <string name="ota_unsuccessful">Urządzenie nie zostało aktywowane. \nKonieczne może być znalezienie obszaru o lepszym zasięgu (w pobliżu okna, lub na zewnątrz). \n\nSpróbuj ponownie lub skontaktuj się z obsługą klienta, aby uzyskać więcej opcji.</string>
+    <string name="puk_unlocked">Karta SIM została odblokowana. Trwa odblokowywanie urządzenia\u2026</string>
+</resources>

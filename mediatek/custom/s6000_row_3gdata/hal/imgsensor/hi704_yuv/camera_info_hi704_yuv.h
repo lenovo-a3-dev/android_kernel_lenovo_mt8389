@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_s3v2/hal/imgsensor/hi704_yuv/camera_info_hi704_yuv.h

@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_a3v2/hal/imgsensor/src/cfg_setting_imgsensor.cpp

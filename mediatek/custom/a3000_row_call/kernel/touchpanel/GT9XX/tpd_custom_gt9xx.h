@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_a3v2/kernel/touchpanel/GT9XX/tpd_custom_gt9xx.h

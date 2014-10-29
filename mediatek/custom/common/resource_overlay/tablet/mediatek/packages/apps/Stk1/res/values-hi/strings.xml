@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lable_busy_on_call">टैबलेट कॉल में व्‍यस्‍त है, कृपया पहले कॉल समाप्त करें</string>
+</resources>

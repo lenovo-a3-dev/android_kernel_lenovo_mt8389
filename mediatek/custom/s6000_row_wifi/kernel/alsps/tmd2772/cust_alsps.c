@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_s3v2/kernel/alsps/tmd2772/cust_alsps.c

@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_s3v2/kernel/touchpanel/tangleM32_16/tpd_custom_tangleM32_16.h

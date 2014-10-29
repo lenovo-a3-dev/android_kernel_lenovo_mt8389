@@ -1,0 +1,1 @@
+../../../mt8389_tablet_s3v2/lk/inc/cust_nand.h

@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_s3v2/hal/imgsensor/hi542_mipi_raw/camera_info_hi542mipiraw.h

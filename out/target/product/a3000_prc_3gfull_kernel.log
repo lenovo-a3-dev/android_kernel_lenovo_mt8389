@@ -1,0 +1,26 @@
+**** Cleaning ****
+make[3]: arm-linux-androideabi-gcc: Команда не найдена
+  CLEAN   .
+  CLEAN   arch/arm/kernel
+  CLEAN   drivers/video/logo
+  CLEAN   kernel
+  CLEAN   lib
+/bin/sh: 1: [: mediatek/custom/out/a3000_prc_3gfull/kernel/usb/: unexpected operator
+/home/kupyxa4444/android/working/kernel/mediatek/kernel/drivers/fmradio/Makefile:10: feature_option=MT6628_FM
+/home/kupyxa4444/android/working/kernel/mediatek/kernel/drivers/fmradio/Makefile:12: MT6628_FM
+/home/kupyxa4444/android/working/kernel/mediatek/kernel/drivers/fmradio/Makefile:35: core/fm_module.o core/fm_main.o core/fm_config.o core/fm_rds_parser.o core/fm_patch.o core/fm_utils.o core/fm_link.o core/fm_eint.o mt6628/pub/mt6628_fm_lib.o mt6628/pub/mt6628_fm_rds.o mt6628/pub/mt6628_fm_cmd.o mt6628/pub/mt6628_fm_config.o
+  CLEAN   net/wireless
+  CLEAN   usr
+clean mediatek kernel source tree
+find /home/kupyxa4444/android/working/kernel/../mediatek/config/out/a3000_prc_3gfull/autoconfig -name kconfig -type f -print | xargs rm -f
+  CLEAN   arch/arm/boot/compressed
+  CLEAN   arch/arm/boot
+  CLEAN   .tmp_versions
+  CLEAN   vmlinux System.map .tmp_kallsyms1.S .tmp_kallsyms1.o .tmp_kallsyms2.S .tmp_kallsyms2.o .tmp_vmlinux1 .tmp_vmlinux2 .tmp_System.map
+  CLEAN   scripts/basic
+  CLEAN   scripts/kconfig
+  CLEAN   scripts/mod
+  CLEAN   scripts
+  CLEAN   include/config include/generated arch/arm/include/generated
+  CLEAN   .config .config.old .version include/linux/version.h Module.symvers
+Check Img size process disabled due to MTK_CHKIMGSIZE_SUPPORT is set to no

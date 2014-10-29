@@ -1,0 +1,3 @@
+./Cgen -c ./apeditor/app_temp_db ./cgencfg/tgt_cnf ./cgencfg/pc_cnf ./APDB2_MT6589_S01_MAIN2.1_W10.24 ./APDB_MT6589_S01_MAIN2.1_W10.24_ENUM >./Cgen_db.err
+./Cgen -cm ./APDB_MT6589_S01_MAIN2.1_W10.24 ./APDB2_MT6589_S01_MAIN2.1_W10.24 ./apeditor/app_temp_db ./APDB_MT6589_S01_MAIN2.1_W10.24_ENUM >./Cgen_db.err
+codegen process is DONE successfully!

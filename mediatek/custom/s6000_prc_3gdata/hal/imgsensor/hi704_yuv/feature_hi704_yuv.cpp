@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_s3v2/hal/imgsensor/hi704_yuv/feature_hi704_yuv.cpp

@@ -1,0 +1,1 @@
+../../../../mt8389_tablet_s3v2/kernel/kpd/kpd/mtk_kpd.h
