@@ -2,7 +2,7 @@
 
 set -e
 
-KERNEL_DIR=/home/olivier/a3000_kernel_jb
+KERNEL_DIR=/home/olivier/android/working
 export TARGET_PRODUCT=a3000_row_call
 RAMDISK_DIRECTORY=/home/olivier/a3-kernel/ramdisk/$TARGET_PRODUCT
 

@@ -5,7 +5,7 @@ export FLASHABLE_ZIP="./kernel-$TARGET_PRODUCT-`date +"%Y%m%d"`.zip"
 
 ./mk -o=TARGET_BUILD_VARIANT=user $TARGET_PRODUCT n k
 mkdir -p ~/android/working/out/target/product/$TARGET_PRODUCT/system/lib/modules
-source /home/olivier/a3000_kernel_jb/pack_bootimage.sh
+source /home/olivier/android/working/pack_bootimage.sh
 cp ~/android/working/kernel/out/drivers/hid/hid-logitech-dj.ko ~/android/working/out/target/product/$TARGET_PRODUCT/system/lib/modules/hid-logitech-dj.ko
 cp ~/android/working/kernel/out/drivers/scsi/scsi_wait_scan.ko ~/android/working/out/target/product/$TARGET_PRODUCT/system/lib/modules/scsi_wait_scan.ko.ko
 cp ~/android/working/kernel/out/drivers/scsi/scsi_tgt.ko ~/android/working/out/target/product/$TARGET_PRODUCT/system/lib/modules/scsi_tgt.ko
