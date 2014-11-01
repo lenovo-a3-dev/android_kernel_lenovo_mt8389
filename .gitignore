@@ -18,3 +18,9 @@
 /out/
 mediatek/config/out/
 mediatek/custom/out/
+..tmp*
+.tmp*
+.config*
+.missing-*
+.version*
+.vmlinux*
