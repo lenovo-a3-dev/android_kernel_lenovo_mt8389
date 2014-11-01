@@ -1,7 +1,0 @@
-{
-   fun:rand
-   ThreadSanitizer:Race
-   ...
-   fun:rand
-}
-
