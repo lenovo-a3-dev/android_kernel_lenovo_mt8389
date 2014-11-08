@@ -90,7 +90,7 @@
 
 
 #define BMC050_RETURN_FUNCTION_TYPE        char
-#define BMC050_I2C_ADDRESS                 0x10
+#define BMC050_I2C_ADDRESS                 0x24 >> 1
 
 /*General Info datas*/
 #define BMC050_SOFT_RESET7_ON              1
@@ -1548,7 +1548,7 @@ enum {
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 static const struct i2c_device_id bmm050_i2c_id[] = {{BMM050_DEV_NAME,0},{}};
-static struct i2c_board_info __initdata i2c_bmm050={ I2C_BOARD_INFO("bmm050", (0x10))};
+static struct i2c_board_info __initdata i2c_bmm050={ I2C_BOARD_INFO("bmm050", (0x12))};	//10
 
 /*the adapter id will be available in customization*/
 //static unsigned short bmm050_force[] = {0x00, BMM050_I2C_ADDR, I2C_CLIENT_END, I2C_CLIENT_END};
@@ -2496,6 +2496,7 @@ int bmm050_orientation_operate(void* self, uint32_t command, void* buff_in, int 
 	int err = 0;
 	int value;
 	hwm_sensor_data* osensor_data;	
+	int temp_data;
 #if DEBUG	
 	struct i2c_client *client = this_client;  
 	struct bmm050_i2c_data *data = i2c_get_clientdata(client);
@@ -2581,8 +2582,11 @@ int bmm050_orientation_operate(void* self, uint32_t command, void* buff_in, int 
 			{
 				osensor_data = (hwm_sensor_data *)buff_out;
 				mutex_lock(&sensor_data_mutex);
-				
-				osensor_data->values[0] = sensor_data[8];
+//Ivan	Fixed floating point problem
+				temp_data = (sensor_data[8] * 71000)/71488;
+				osensor_data->values[0] = temp_data;
+				if (osensor_data->values[0] > 360*CONVERT_O_DIV)
+				    osensor_data->values[0] = 360*CONVERT_O_DIV;
 				osensor_data->values[1] = sensor_data[9];
 				osensor_data->values[2] = sensor_data[10];
 				osensor_data->status = sensor_data[11];
@@ -3004,4 +3008,3 @@ module_exit(bmm050_exit);
 MODULE_AUTHOR("hongji.zhou@bosch-sensortec.com");
 MODULE_DESCRIPTION("bmm050 compass driver");
 MODULE_LICENSE("GPL");
-
