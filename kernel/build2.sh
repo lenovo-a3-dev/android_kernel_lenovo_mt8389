@@ -35,7 +35,7 @@ cd $DT
 git add --all
 git stash;git reset --hard
 rm -rf $DT/prebuilt/modules/*
-rm -rf $DT/kernel
+rm -rf $DT/prebuilt/kernel
 cp $OUT_DIRECTORY/system/lib/modules/* $DT/prebuilt/modules
-cp $OUT_DIRECTORY/zImage $DT/kernel
-git add --all;git commit -m "a3: Update prebuilt kernel.";git push -f
+cp $OUT_DIRECTORY/zImage $DT/prebuilt/kernel
+git add --all
