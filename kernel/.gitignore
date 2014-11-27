@@ -86,3 +86,8 @@ GTAGS
 \#*#
 
 /out/
+
+*.S
+*.lds
+*Image
+vmlinux
