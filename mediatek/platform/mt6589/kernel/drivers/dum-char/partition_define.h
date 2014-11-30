@@ -1,0 +1,1 @@
+../../../../../custom/lenovo89_tb_twn_a_jb2/common/partition_define.h

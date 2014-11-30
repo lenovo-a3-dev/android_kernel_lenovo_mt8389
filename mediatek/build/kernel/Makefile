@@ -33,15 +33,15 @@
 # applicable license agreements with MediaTek Inc.
 
 
-include $(srctree)/../mediatek/build/Makefile
+include $(srctree)/mediatek/build/Makefile
 ifneq ($(KBUILD_SRC),)
-$(call codebase-path,kernel,$(srctree)/..)
+$(call codebase-path,kernel,$(srctree)/)
 else
 $(call codebase-path,kernel)
 endif
 #TO-DO 
 #$(call relative-include,common.mk)
-include $(srctree)/../mediatek/build/kernel/common.mk
+include $(srctree)/mediatek/build/kernel/common.mk
 MODULE_PREFIX_KERNEL := CUSTOM_KERNEL_
 MODULE_PREFIX_HAL    := CUSTOM_HAL_
 machine-y       := $(call lc,$(MTK_PLATFORM))
