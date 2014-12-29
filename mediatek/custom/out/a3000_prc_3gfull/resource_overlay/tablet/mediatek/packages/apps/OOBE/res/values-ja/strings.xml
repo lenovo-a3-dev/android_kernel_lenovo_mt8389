@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="oobe_summary_import_contacts">連絡先をタブレットにインポートするには、挿入されているいくつかまたはすべての SIM カードを選択してください。</string>
-
-    <string name="oobe_summary_language_setting">タブレットの操作に使用する言語を選択してください</string>
-</resources>

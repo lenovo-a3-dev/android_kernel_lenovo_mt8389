@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sdcard_missing_message_nosdcard">Twoje urządzenie nie posiada pamięci USB.</string>
-
-    <string name="sdcard_missing_message">"Brak karty SD w telefonie."</string>
-</resources>

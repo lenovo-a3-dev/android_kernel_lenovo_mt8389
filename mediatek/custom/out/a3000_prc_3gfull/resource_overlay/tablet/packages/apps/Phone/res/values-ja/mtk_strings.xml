@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="callFailed_dsac_vt_out_of_3G_yourphone">デバイスは 3G サービスエリアの圏外にあります。音声通話を行いますか?</string>
-    <string name="activity_not_found">デバイスにアプリケーションがインストールされていません。</string>
-</resources>
