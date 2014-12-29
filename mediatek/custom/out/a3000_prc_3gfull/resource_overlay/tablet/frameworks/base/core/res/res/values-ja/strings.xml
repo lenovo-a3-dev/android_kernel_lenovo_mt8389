@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="wifi_p2p_frequency_conflict_message"><xliff:g id="device_name">%1$s</xliff:g> に接続されている間、タブレットは一時的に Wi-Fi から切断されます</string>
-    <string name="permdesc_disableKeyguard">アプリによるキーロックと
-関連パスワードセキュリティの無効化を許可します。たとえば、
-着信通話があるとキーロックが無効になり、
-通話が終了するとキーロックが再度有効になります。</string>
-</resources>
