@@ -822,7 +822,7 @@ u32 PTP_INIT_01(void)
     PTP_Init_value.VMAX = 0x5D; // 1.28125v (700mv + n * 6.25mv)
     PTP_Init_value.VMIN = 0x28; // 0.95v (700mv + n * 6.25mv)    
     PTP_Init_value.DTHI = 0x01; // positive
-    PTP_Init_value.DTLO = 0xfe; // negative (2¡¦s compliment)
+    PTP_Init_value.DTLO = 0xfe; // negative (2Â¡Â¦s compliment)
     PTP_Init_value.VBOOT = 0x48; // 115v  (700mv + n * 6.25mv)    
     PTP_Init_value.DETMAX = 0xffff; // This timeout value is in cycles of bclk_ck.
     
@@ -921,7 +921,7 @@ u32 PTP_INIT_02(void)
     PTP_Init_value.VMAX = 0x5D; // 1.28125v (700mv + n * 6.25mv)    
     PTP_Init_value.VMIN = 0x28; // 0.95v (700mv + n * 6.25mv)    
     PTP_Init_value.DTHI = 0x01; // positive
-    PTP_Init_value.DTLO = 0xfe; // negative (2¡¦s compliment)
+    PTP_Init_value.DTLO = 0xfe; // negative (2Â¡Â¦s compliment)
     PTP_Init_value.VBOOT = 0x48; // 115v  (700mv + n * 6.25mv)    
     PTP_Init_value.DETMAX = 0xffff; // This timeout value is in cycles of bclk_ck.
 
@@ -1030,7 +1030,7 @@ u32 PTP_MON_MODE(void)
     PTP_Init_value.VMAX = 0x5D; // 1.28125v (700mv + n * 6.25mv)
     PTP_Init_value.VMIN = 0x28; // 0.95v (700mv + n * 6.25mv)    
     PTP_Init_value.DTHI = 0x01; // positive
-    PTP_Init_value.DTLO = 0xfe; // negative (2¡¦s compliment)
+    PTP_Init_value.DTLO = 0xfe; // negative (2Â¡Â¦s compliment)
     PTP_Init_value.VBOOT = 0x48; // 115v  (700mv + n * 6.25mv)    
     PTP_Init_value.DETMAX = 0xffff; // This timeout value is in cycles of bclk_ck.
 
@@ -1081,7 +1081,7 @@ u32 PTP_get_ptp_level(void)
     u32 ptp_level_temp;
 
     #if defined(MTK_FORCE_CPU_89T)
-        return 3; // 1.5GHz
+        return 4; // 1.5GHz
     #else
         ptp_level_temp = get_devinfo_with_index(3) & 0x7;
     
@@ -1393,7 +1393,7 @@ u32 PTP_INIT_01_API(void)
     PTP_Init_value.VMAX = 0x5D; // 1.28125v (700mv + n * 6.25mv)
     PTP_Init_value.VMIN = 0x28; // 0.95v (700mv + n * 6.25mv)    
     PTP_Init_value.DTHI = 0x01; // positive
-    PTP_Init_value.DTLO = 0xfe; // negative (2¡¦s compliment)
+    PTP_Init_value.DTLO = 0xfe; // negative (2Â¡Â¦s compliment)
     PTP_Init_value.VBOOT = 0x48; // 115v  (700mv + n * 6.25mv)    
     PTP_Init_value.DETMAX = 0xffff; // This timeout value is in cycles of bclk_ck.
     
