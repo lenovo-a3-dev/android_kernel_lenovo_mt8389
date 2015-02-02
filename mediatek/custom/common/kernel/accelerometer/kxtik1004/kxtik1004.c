@@ -49,8 +49,8 @@
 #define SW_CALIBRATION
 
 /*----------------------------------------------------------------------------*/
-#define KXTIK1004_AXIS_X          0
-#define KXTIK1004_AXIS_Y          1
+#define KXTIK1004_AXIS_X          1
+#define KXTIK1004_AXIS_Y          0
 #define KXTIK1004_AXIS_Z          2
 #define KXTIK1004_AXES_NUM        3
 #define KXTIK1004_DATA_LEN        6
@@ -253,7 +253,7 @@ static int KXTIK1004_ReadData(struct i2c_client *client, s16 data[KXTIK1004_AXES
 	}
 	else
 	{
-		data[KXTIK1004_AXIS_X] = (s16)((buf[KXTIK1004_AXIS_X*2] >> 4) |
+		data[KXTIK1004_AXIS_X] = (s16)(-(buf[KXTIK1004_AXIS_X*2] >> 4) |
 		         (buf[KXTIK1004_AXIS_X*2+1] << 4));
 		data[KXTIK1004_AXIS_Y] = (s16)((buf[KXTIK1004_AXIS_Y*2] >> 4) |
 		         (buf[KXTIK1004_AXIS_Y*2+1] << 4));
