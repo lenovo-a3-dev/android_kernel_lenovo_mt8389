@@ -326,7 +326,7 @@ static struct file_operations pmic_fops =
     return 0;
 }
 
- void __exit ccci_pmic_exit(void)
+ void  ccci_pmic_exit(void)
 {
     ccci_pmic_stop();
     

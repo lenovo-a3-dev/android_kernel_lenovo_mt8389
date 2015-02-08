@@ -306,7 +306,7 @@ int  ccci_write_runtime_data(int md_id, unsigned char buf[], int len);
 //extern void ccci_register_mdfunc(is_md_boot_func func1, reset_md_func func2,
 //		 ccci_base_req_func pcm_func,ccci_base_req_func log_func);
 extern int __init ccif_module_init(void);
-extern void __exit ccif_module_exit(void);
+extern void  ccif_module_exit(void);
 
 
 #endif  /* !__CCCI_LAYER_H__ */

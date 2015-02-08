@@ -230,7 +230,7 @@ out:
 	return ret;
 }
 
-static void __exit ccci_exit(void)
+static void  ccci_exit(void)
 {
 	unsigned int md_num = 1, i;
 

@@ -405,7 +405,7 @@ typedef int (*ccci_core_eint_config_setup)(int, void *);
 
 
 int __init ccci_md_init_mod_init(void);
-void __exit ccci_md_init_mod_exit(void);
+void  ccci_md_init_mod_exit(void);
 
 
 int ccci_mdlog_base_req(int md_id, void *addr_vir, void *addr_phy, unsigned int *len);
