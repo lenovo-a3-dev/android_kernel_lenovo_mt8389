@@ -87,7 +87,7 @@ typedef struct
 } shared_mem_pmic_t;
 
 int __init ccci_pmic_init(void);
-void __exit ccci_pmic_exit(void);
+void ccci_pmic_exit(void);
 
 #define CCCI_PMIC_SMEM_SIZE sizeof(shared_mem_pmic_t)
 #endif // !_CCCI_PMIC_H
