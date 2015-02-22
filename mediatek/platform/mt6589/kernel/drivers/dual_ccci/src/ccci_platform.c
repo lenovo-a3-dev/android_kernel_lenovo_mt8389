@@ -109,7 +109,7 @@ extern int md_power_on(int);
 extern int md_power_off(int,unsigned int);
 
 /* -------------ccci log filter define---------------------*/
-unsigned int ccci_msg_mask[MAX_MD_NUM] = {0x0, 0x0};
+static unsigned int ccci_msg_mask[MAX_MD_NUM] = {0x0, 0x0};
 EXPORT_SYMBOL(ccci_msg_mask);
 
 
@@ -143,7 +143,7 @@ static void ccci_get_platform_ver(char * ver)
 }
 
 
-int is_modem_debug_ver(int md_id)
+static int is_modem_debug_ver(int md_id)
 {
 	return img_is_dbg_ver[md_id];
 }
@@ -157,7 +157,7 @@ char * get_md_info_str(int md_id)
 EXPORT_SYMBOL(get_md_info_str);
 
 
-int get_ccif_hw_info(int md_id, ccif_hw_info_t *ccif_hw_info)
+static int get_ccif_hw_info(int md_id, ccif_hw_info_t *ccif_hw_info)
 {
 	if (ccif_hw_info == NULL)
 		return -1;
@@ -187,7 +187,7 @@ int get_ccif_hw_info(int md_id, ccif_hw_info_t *ccif_hw_info)
 EXPORT_SYMBOL(get_ccif_hw_info);
 
 
-void config_misc_info(int md_id, unsigned int base[], unsigned int size)
+static void config_misc_info(int md_id, unsigned int base[], unsigned int size)
 {
 	misc_info_t misc_info;
 	int str[2];
@@ -319,7 +319,7 @@ static int get_txpower(int md_id, char *buf, unsigned int len)
 }
 
 
-void send_battery_info(int md_id)
+static void send_battery_info(int md_id)
 {
 	int	ret = 0;
 	unsigned int para = 0;
@@ -354,7 +354,7 @@ extern unsigned int sec_secro_blk_sz(void);
 unsigned int res_len = 0; //<<KE, need check this
 
 
-void ccci_rpc_work_helper(int md_id, int *p_pkt_num, RPC_PKT pkt[], RPC_BUF *p_rpc_buf, unsigned int tmp_data[])
+static void ccci_rpc_work_helper(int md_id, int *p_pkt_num, RPC_PKT pkt[], RPC_BUF *p_rpc_buf, unsigned int tmp_data[])
 {
 	// tmp_data[] is used to make sure memory address is valid after this function return
 	int pkt_num = *p_pkt_num;
@@ -1678,7 +1678,7 @@ static int load_img_cfg(int md_id)
 }
 
 
-int ccci_load_firmware(int md_id, unsigned int load_flag, char img_err_str[], int len)
+static int ccci_load_firmware(int md_id, unsigned int load_flag, char img_err_str[], int len)
 {
 	int					i;
 	int					ret = 0;
@@ -1761,34 +1761,34 @@ EXPORT_SYMBOL(ccci_load_firmware);
 /*  hook function during modem boot up                                                                               */
 /*                                                                                                                                   */
 /*********************************************************************************/
-void md_env_setup_before_boot(int md_id)
+static void md_env_setup_before_boot(int md_id)
 {
 	enable_mem_access_protection(md_id);
 }
 EXPORT_SYMBOL(md_env_setup_before_boot);
 
 
-void md_env_setup_before_ready(int md_id)
+static void md_env_setup_before_ready(int md_id)
 {
 }
 EXPORT_SYMBOL(md_env_setup_before_ready);
 
 
-void md_boot_up_additional_operation(int md_id)
+static void md_boot_up_additional_operation(int md_id)
 {
 	//power on Audsys for DSP boot up
 	//AudSys_Power_On(TRUE);
 }
 EXPORT_SYMBOL(md_boot_up_additional_operation);
 
-void md_boot_ready_additional_operation(int md_id)
+static void md_boot_ready_additional_operation(int md_id)
 {
 	//power off Audsys after DSP boot up ready
 	//AudSys_Power_On(FALSE);
 }
 EXPORT_SYMBOL(md_boot_ready_additional_operation);
 
-void additional_operation_before_stop_md(int md_id)
+static void additional_operation_before_stop_md(int md_id)
 {
 	//char buf = 1;
 	//exec_ccci_kern_func(ID_LOCK_MD_SLEEP, &buf, sizeof(char));
@@ -1810,7 +1810,7 @@ static void md_wdt_notify(int md_id)
 	}
 }
 
-void ccci_md_wdt_notify_register(int md_id, int_func_int_t funcp)
+static void ccci_md_wdt_notify_register(int md_id, int_func_int_t funcp)
 {
 	if(NULL == funcp){
 		CCCI_MSG_INF(md_id, "ctl", "[Error]md wdt notify function pointer is NULL\n");
@@ -1880,7 +1880,7 @@ void md_dsp_wdt_irq_dis(int md_id)
 EXPORT_SYMBOL(md_dsp_wdt_irq_dis);
 
 
-void start_md_wdt_recov_timer(int md_id) 
+static void start_md_wdt_recov_timer(int md_id) 
 {
 	switch(md_id)
 	{
@@ -2185,7 +2185,7 @@ static int ccci_dis_md2_clock(unsigned int timeout)
 //========================================================
 // power on/off modem
 //========================================================
-int ccci_power_on_md(int md_id)
+static int ccci_power_on_md(int md_id)
 {
 	CCCI_MSG_INF(md_id, "ctl", "[ccci/cci] power on md%d to run\n", md_id+1);
 	
@@ -2300,7 +2300,7 @@ void gate_md2(unsigned int timeout)
 }
 
 
-int let_md_stop(int md_id, unsigned int timeout)
+static int let_md_stop(int md_id, unsigned int timeout)
 {
 	switch(md_id)
 	{
@@ -2320,7 +2320,7 @@ int let_md_stop(int md_id, unsigned int timeout)
 EXPORT_SYMBOL(let_md_stop);
 
 
-int let_md_go(int md_id)
+static int let_md_go(int md_id)
 {
 	unsigned int dbg_spare = *((volatile unsigned int*)(DEBUGTOP_BASE+0x1A010));
 	
@@ -2610,7 +2610,7 @@ void md_deinit(int md_id)
 }
 
 
-int platform_init(int md_id, int power_down)
+static int platform_init(int md_id, int power_down)
 {
 	int ret = 0;
 	
@@ -2621,7 +2621,7 @@ int platform_init(int md_id, int power_down)
 EXPORT_SYMBOL(platform_init);
 
 
-void platform_deinit(int md_id)
+static void platform_deinit(int md_id)
 {
 	md_deinit(md_id);
 }

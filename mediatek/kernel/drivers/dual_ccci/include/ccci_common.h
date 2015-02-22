@@ -74,7 +74,7 @@
 
 /*---------------------------------------------------------------------------*/
 /* Switchable messages */
-extern unsigned int ccci_msg_mask[];
+static extern unsigned int ccci_msg_mask[];
 
 #ifdef USING_PRINTK_LOG
 
@@ -306,40 +306,40 @@ typedef enum
 //==================================================================================
 // API functions exported by ccci platform
 //==================================================================================
-int					get_dev_major_for_md_sys(int md_id);
-int					get_ccif_hw_info(int md_id, ccif_hw_info_t *ccif_hw_info);
-void				md_env_setup_before_boot(int md_id);
-void        		md_env_setup_before_ready(int md_id);
-void				md_boot_up_additional_operation(int md_id);
-void				md_boot_ready_additional_operation(int md_id);
-void				additional_operation_before_stop_md(int md_id);
+static int					get_dev_major_for_md_sys(int md_id);
+static int					get_ccif_hw_info(int md_id, ccif_hw_info_t *ccif_hw_info);
+static void				md_env_setup_before_boot(int md_id);
+static void        		md_env_setup_before_ready(int md_id);
+static void				md_boot_up_additional_operation(int md_id);
+static void				md_boot_ready_additional_operation(int md_id);
+static void				additional_operation_before_stop_md(int md_id);
 smem_alloc_t*		get_md_smem_layout(int md_id);
-unsigned int		get_md_sys_max_num(void);
+static unsigned int		get_md_sys_max_num(void);
 void				enable_mem_access_protection(int md_id);
-int					ccci_load_firmware(int md_id, unsigned int load_flag, char img_err_str[], int len);
-int					ccci_power_on_md(int md_id);
+static int					ccci_load_firmware(int md_id, unsigned int load_flag, char img_err_str[], int len);
+static int					ccci_power_on_md(int md_id);
 int					ccci_power_down_md(int md_id);
-int					let_md_stop(int md_id, unsigned int timeout);
-int					let_md_go(int md_id);
-int					ccci_get_sub_module_cfg(int md_id, char name[], char out_buf[], int size);
-unsigned int		is_md_enable(int md_id);
+static int					let_md_stop(int md_id, unsigned int timeout);
+static int					let_md_go(int md_id);
+static int					ccci_get_sub_module_cfg(int md_id, char name[], char out_buf[], int size);
+static unsigned int		is_md_enable(int md_id);
 int					ccci_alloc_smem(int md_id);
-void				ccci_free_smem(int md_id);
+static void				ccci_free_smem(int md_id);
 ccci_mem_layout_t*	get_md_sys_layout(int md_id);
-int					is_modem_debug_ver(int md_id);
+static int					is_modem_debug_ver(int md_id);
 char*				get_md_info_str(int md_id);
-void				platform_set_runtime_data(int md_id, modem_runtime_t *runtime);
+static void				platform_set_runtime_data(int md_id, modem_runtime_t *runtime);
 void 				config_misc_info(int md_id, unsigned int base[], unsigned int size);
-void                send_battery_info(int md_id);
+static void                send_battery_info(int md_id);
 void                md_fast_dormancy(int md_id);
-void				start_md_wdt_recov_timer(int md_id);
+static void				start_md_wdt_recov_timer(int md_id);
 
 
 //==================================================================================
 // API functions exported by ccci source
 //==================================================================================
-int                 platform_init(int md_id, int power_down);
-void                platform_deinit(int md_id);
+static int                 platform_init(int md_id, int power_down);
+static void                platform_deinit(int md_id);
 int                 ccci_md_ctrl_init(int md_id);
 void                ccci_md_ctrl_exit(int md_id);
 int                 ccci_chrdev_init(int md_id);
@@ -395,7 +395,7 @@ ccif_t*             ccif_create_instance(ccif_hw_info_t *info, void* ctl_b, int 
 int					ccci_uart_ipo_h_restore(int md_id);
 int					ccci_ipc_ipo_h_restore(int md_id);
 int					ccmni_ipo_h_restore(int md_id);
-int					ccci_ipo_h_platform_restore(int md_id);
+static int					ccci_ipo_h_platform_restore(int md_id);
 
 int					ccci_ipo_h_restore(int md_id, char buf[], unsigned int len);
 
