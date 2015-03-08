@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lenovo-a3-dev/kernel_lenovo_a3.svg)](https://travis-ci.org/lenovo-a3-dev/kernel_lenovo_a3)
+
 	Linux kernel release 3.x <http://kernel.org/>
 
 These are the release notes for Linux version 3.  Read them carefully,

@@ -1,0 +1,12 @@
+language: c
+env:
+  - ARCH=arm SUBARCH=arm CROSS_COMPILE=arm-eabi-
+before_install:
+  - git clone --depth=50 https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7
+  - export PATH=$(pwd)/arm-eabi-4.7/bin:$PATH
+  - export TARGET_KERNEL_PRODUCT=a3000_prc_3gfull
+
+before_script:
+  - rm -rf mediatek/custom/out
+script:
+  - TARGET_BUILD_VARIANT=user make -j$(grep -c '^processor' /proc/cpuinfo)
