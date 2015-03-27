@@ -1,1 +1,0 @@
-mediatek/build/mbldenv.sh
